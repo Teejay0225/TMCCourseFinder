@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Course Finder TMC</string>
+    <string name="email">info@tmc.edu.sg</string>
+    <string name="website">https://www.tmc.edu.sg</string>
+    <string name="call">(+65) 6690 9599</string>
+    <string name="whatsapp">(+65) 9671 2110</string>
+</resources>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/pop_bg"
+    tools:context=".PopUpTmcActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linearTmc"
+        android:layout_width="374dp"
+        android:layout_height="111dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_consstraintTop_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintRight_creator="1">
+
+        <ImageView
+            android:id="@+id/imageTmc"
+            android:layout_width="352dp"
+            android:layout_height="115dp"
+            android:src="@drawable/tmc_logo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="0dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearCall"
+        android:layout_width="305dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="116dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageCall"
+            android:layout_width="90dp"
+            android:layout_height="80dp"
+            android:paddingLeft="@dimen/popup_padding"
+            android:paddingRight="@dimen/popup_padding"
+            android:src="@drawable/call_logo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_consstraintTop_creator="1"
+            tools:layout_constraintBottom_creator="1"
+            tools:layout_constraintRight_creator="1" />
+
+        <TextView
+            android:id="@+id/textCall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/popup_margin_top"
+            android:layout_weight="1"
+            android:text="@string/call"
+            android:textSize="@dimen/popup_font_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_consstraintTop_creator="1"
+            tools:layout_constraintBottom_creator="1"
+            tools:layout_constraintRight_creator="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearEmail"
+        android:layout_width="305dp"
+        android:layout_height="84dp"
+        android:layout_below="@+id/linearTmc"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="200dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageEmail"
+            android:layout_width="90dp"
+            android:layout_height="80dp"
+            android:paddingLeft="@dimen/popup_padding"
+            android:paddingRight="@dimen/popup_padding"
+            android:src="@drawable/email_logo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_consstraintTop_creator="1"
+            tools:layout_constraintBottom_creator="1"
+            tools:layout_constraintRight_creator="1" />
+
+        <TextView
+            android:id="@+id/textEmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/popup_margin_top"
+            android:layout_weight="1"
+            android:text="@string/email"
+            android:textSize="@dimen/popup_font_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_consstraintTop_creator="1"
+            tools:layout_constraintBottom_creator="1"
+            tools:layout_constraintRight_creator="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearWhatsApp"
+        android:layout_width="305dp"
+        android:layout_height="84dp"
+        android:layout_below="@+id/linearTmc"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="280dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageWhatsApp"
+            android:layout_width="90dp"
+            android:layout_height="80dp"
+            android:paddingLeft="@dimen/popup_padding"
+            android:paddingRight="@dimen/popup_padding"
+            android:src="@drawable/whatsapp_logo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_consstraintTop_creator="1"
+            tools:layout_constraintBottom_creator="1"
+            tools:layout_constraintRight_creator="1" />
+
+        <TextView
+            android:id="@+id/textWhatsApp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/popup_margin_top"
+            android:layout_weight="1"
+            android:text="@string/whatsapp"
+            android:textSize="@dimen/popup_font_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_consstraintTop_creator="1"
+            tools:layout_constraintBottom_creator="1"
+            tools:layout_constraintRight_creator="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearWebSite"
+        android:layout_width="@dimen/popup_width"
+        android:layout_height="84dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="364dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageWebSite"
+            android:layout_width="90dp"
+            android:layout_height="80dp"
+            android:paddingLeft="@dimen/popup_padding"
+            android:paddingRight="@dimen/popup_padding"
+            android:src="@drawable/website_logo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_consstraintTop_creator="1"
+            tools:layout_constraintBottom_creator="1"
+            tools:layout_constraintRight_creator="1" />
+
+        <TextView
+            android:id="@+id/textX"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/popup_margin_top"
+            android:layout_weight="1"
+            android:text="@string/website"
+            android:textSize="@dimen/popup_url_font_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_consstraintTop_creator="1"
+            tools:layout_constraintBottom_creator="1"
+            tools:layout_constraintRight_creator="1" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/buttonClose"
+        android:layout_width="345dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="460dp"
+        android:text="Close"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_consstraintTop_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
